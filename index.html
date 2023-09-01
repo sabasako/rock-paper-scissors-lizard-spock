@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/icon-lizard.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!------------>
+    <!-- HEADER -->
+    <!------------>
+
+    <header>
+      <img src="images/logo-bonus.svg" alt="Game logo" />
+      <div class="score">
+        <p>Score</p>
+        <p data-score>0</p>
+      </div>
+    </header>
+
+    <!---------------------->
+    <!-- PENTAGON SECTION -->
+    <!---------------------->
+
+    <section data-section-pentagon class="section-pentagon">
+      <img class="pentagon" src="images/bg-pentagon.svg" alt="pentagon" />
+      <div class="circle spock">
+        <img src="images/icon-spock.svg" alt="spock icon" />
+      </div>
+      <div class="circle scissors">
+        <img src="images/icon-scissors.svg" alt="scissors icon" />
+      </div>
+      <div class="circle paper">
+        <img src="images/icon-paper.svg" alt="paper icon" />
+      </div>
+      <div class="circle rock">
+        <img src="images/icon-rock.svg" alt="rock icon" />
+      </div>
+      <div class="circle lizard">
+        <img src="images/icon-lizard.svg" alt="lizard icon" />
+      </div>
+    </section>
+
+    <!------------------>
+    <!-- GAME SECTION -->
+    <!------------------>
+
+    <section data-section-game class="section-game hidden">
+      <p>YOU PICKED</p>
+      <p data-game-p>THE HOUSE PICKED</p>
+      <div id="user-pick" class="game-container">
+        <img data-user-pick />
+        <div class="background-winner-small hidden"></div>
+        <div class="background-winner-medium hidden"></div>
+        <div class="background-winner-big hidden"></div>
+      </div>
+      <div data-conclusion class="conclusion hidden">
+        <p data-conclusion-paragraph></p>
+        <button data-play-again>PLAY AGAIN</button>
+      </div>
+      <div id="house-pick" class="game-container">
+        <img data-house-pick />
+        <div class="background-winner-small hidden"></div>
+        <div class="background-winner-medium hidden"></div>
+        <div class="background-winner-big hidden"></div>
+      </div>
+    </section>
+
+    <!-- <div class="background-winner">
+      <div class="background-winner-small"></div>
+      <div class="background-winner-medium"></div>
+      <div class="background-winner-big"></div>
+    </div> -->
+
+    <!------------------->
+    <!-- RULES SECTION -->
+    <!------------------->
+
+    <section data-section-rules class="section-rules hidden">
+      <p>Rules</p>
+      <img class="rules-img" src="images/image-rules-bonus.svg" alt="rules" />
+      <img
+        class="close-btn"
+        data-close-btn
+        src="images/icon-close.svg"
+        alt="close icon"
+      />
+    </section>
+
+    <section
+      data-section-background
+      class="section-background hidden"
+    ></section>
+
+    <!------------------>
+    <!-- Rules button -->
+    <!------------------>
+    <button data-rules-btn class="rules-btn">RULES</button>
+
+    <footer>
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        <a
+          href="https://github.com/sabasako/"
+          class="github-logo-a"
+          target="_blank"
+          >sabasako <ion-icon class="github-logo" name="logo-github"></ion-icon
+        ></a>
+      </p>
+    </footer>
+
+    <!-- Ionicons script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
