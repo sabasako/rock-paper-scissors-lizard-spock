@@ -13,7 +13,7 @@ This is a challenge from Frondend Mentor, [inspiration](https://www.youtube.com/
 
 ## Screenshot
 
-![](./images/PC)
+![](./images/PC.png)
 
 ## Links
 
